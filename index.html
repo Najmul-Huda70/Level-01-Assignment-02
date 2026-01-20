@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Techwave</title>
+  </head>
+  <body class="font-inter">
+    <header>
+      <section class="bg-[#1A0B2E] text-[#FFFFFF]">
+        <nav class="flex justify-between items-center w-[90%] p-[10px] mx-auto">
+          <h1 class="text-5xl font-bold">Tech<span class="">wave</span></h1>
+          <ul
+            class="flex justify-center items-center gap-x-20 text-base/[120%] font-medium"
+          >
+            <li class="list-none"><a class="no-underline" href="">About</a></li>
+            <li class="list-none">
+              <a class="no-underline" href="">Episodes</a>
+            </li>
+            <li class="list-none"><a class="no-underline" href="">Host</a></li>
+          </ul>
+          <button
+            class="text-base font-semibold bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-3xl px-3 py-1"
+          >
+            Subscribe <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </nav>
+      </section>
+      <section
+        class="w-full bg-center bg-cover bg-[url(./assets/hero-bg.png)] bg-no-repeat text-[#FFFFFF]"
+      >
+        <div class="flex flex-col items-center">
+          <div><img src="./assets/hero-circle.png" alt="" /></div>
+          <div class="absolute py-20">
+            <img src="./assets/microphone.png" alt="" />
+          </div>
+
+          <h1 class="mt-15 text-6xl font-extrabold">TechWave</h1>
+          <p class="mt-5">
+            Your daily dose of tech insights, productivity hacks, and personal
+            growth
+          </p>
+          <div class="m-8 flex gap-x-5">
+            <button
+              class="text-base font-semibold bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-3xl px-3 py-1"
+            >
+              <i class="fa-brands fa-spotify"></i> Listen on Spotify
+            </button>
+            <button
+              class="text-base text-[#00FF88] border border-[#00FF88] font-semibold border-transparent rounded-3xl px-3 py-1"
+            >
+              <i class="fa-regular fa-envelope"></i> Subscribe
+            </button>
+          </div>
+        </div>
+      </section>
+    </header>
+  </body>
+</html>
