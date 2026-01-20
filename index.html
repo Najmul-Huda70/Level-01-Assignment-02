@@ -11,6 +11,26 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <style>
+      .Subscribe {
+        border: 1px solid #00ff88;
+      }
+      .wave {
+        background: linear-gradient(90deg, #f7e93f, #fb09b4, #9100f8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .round {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #fb09b4;
+        border-radius: 30px;
+      }
+    </style>
     <title>Techwave</title>
   </head>
   <body class="font-inter">
@@ -18,7 +38,7 @@
       <!-- navbar -->
       <section class="bg-[#1A0B2E] text-[#FFFFFF]">
         <nav class="flex justify-between items-center w-[90%] p-[10px] mx-auto">
-          <h1 class="text-5xl font-bold">Tech<span class="">wave</span></h1>
+          <h1 class="text-5xl font-bold">Tech<span class="wave">Wave</span></h1>
           <ul
             class="flex justify-center items-center gap-x-20 text-base/[120%] font-medium"
           >
@@ -29,7 +49,7 @@
             <li class="list-none"><a class="no-underline" href="">Host</a></li>
           </ul>
           <button
-            class="text-base font-semibold bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-3xl px-3 py-1"
+            class="cursor-pointer text-base font-semibold bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-3xl px-3 py-1"
           >
             Subscribe <i class="fa-solid fa-arrow-right"></i>
           </button>
@@ -53,12 +73,12 @@
           </p>
           <div class="m-8 flex gap-x-5">
             <button
-              class="text-base font-semibold bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-3xl px-3 py-1"
+              class="cursor-pointer text-base font-semibold bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-3xl px-3 py-1"
             >
               <i class="fa-brands fa-spotify"></i> Listen on Spotify
             </button>
             <button
-              class="text-base text-[#00FF88] border border-[#00FF88] font-semibold border-transparent rounded-3xl px-3 py-1"
+              class="cursor-pointer Subscribe text-base text-[#00FF88] border border-[#00FF88] font-semibold border-transparent rounded-3xl px-3 py-1"
             >
               <i class="fa-regular fa-envelope"></i> Subscribe
             </button>
@@ -110,8 +130,10 @@
             <h1 class="mb-10 text-5xl font-bold">Why Choose TechWave</h1>
           </div>
           <div class="grid grid-cols-3 grid-rows-3 gap-7">
-            <div class="px-8 py-15 row-span-2 bg-[#351165] rounded-2xl">
-              <img src="./assets/headphone.png" alt="" />
+            <div
+              class="flex flex-col justify-center px-8 py-15 row-span-2 bg-[#351165] rounded-2xl"
+            >
+              <div><img src="./assets/headphone.png" alt="" /></div>
               <h1 class="mt-4 mb-4 text-2xl font-bold">
                 Premium Audio Quality
               </h1>
@@ -137,7 +159,7 @@
               </p>
             </div>
             <div class="px-8 py-15 col-span-2 bg-[#351165] rounded-2xl">
-              <i class="fa-solid fa-bolt-lightning"></i>
+              <div><img src="./assets/Icon (Stroke).png" alt="" /></div>
               <h1 class="mt-4 mb-4 text-2xl font-bold">Exclusive Interviews</h1>
               <p class="text-base leading-[20px]">
                 Get unprecedented access to industry titans, startup founders,
@@ -186,15 +208,17 @@
               ></iframe>
               <div class="p-5">
                 <h1 class="mt-4 mb-4 text-2xl font-bold">
-                  The Future of AI in Everyday Life
+                  The Future Mark Zuckerberg Is Trying To Build
                 </h1>
                 <p class="text-base leading-[20px]">
-                  Exploring how artificial intelligence is transforming our
-                  daily routines and what to expect in the next decade.
+                  We talked about the Meta's new Orion prototype AR glasses,
+                  creating holograms and the Star Trek universal translator,
+                  generative AI changing social media, big trends in human
+                  connection, open sourced AI and more...
                 </p>
                 <div class="flex gap-2 items-center pt-3">
                   <div><img src="./assets/clock.png" alt="" /></div>
-                  <p>42 min</p>
+                  <p>47 min</p>
                 </div>
               </div>
             </div>
@@ -203,7 +227,7 @@
                 width="100%"
                 height="220"
                 class="rounded-t-2xl"
-                src="https://www.youtube.com/embed/oX7OduG1YmI?si=R89goOXqrNNv4sQ1"
+                src="https://www.youtube.com/embed/lriCkWIHEHs?si=4kUyvhSmnTEFUWoF"
                 title="YouTube video player"
                 frameborder="0"
                 allow="
@@ -220,11 +244,13 @@
               ></iframe>
               <div class="p-5">
                 <h1 class="mt-4 mb-4 text-2xl font-bold">
-                  Building Better Habits for Remote Work
+                  How I Manage My Time - 8 Tips that Changed My Life
                 </h1>
                 <p class="text-base leading-[20px]">
-                  Practical strategies for staying productive and maintaining
-                  work-life balance in a remote environment.
+                  In this video, I share the 8 critical time management tips
+                  that transformed my productivity, helping me juggle my
+                  full-time tech role and my YouTube side hustle.8 Tips that
+                  Changed My Life
                 </p>
                 <div class="flex gap-2 items-center pt-3">
                   <div><img src="./assets/clock.png" alt="" /></div>
@@ -236,10 +262,10 @@
               <iframe
                 width="100%"
                 height="220"
-                src="https://www.youtube.com/embed/oX7OduG1YmI?si=R89goOXqrNNv4sQ1"
+                class="rounded-t-2xl"
+                src="https://www.youtube.com/embed/7ARBJQn6QkM?si=8AZlOglVNlRpkWCt"
                 title="YouTube video player"
                 frameborder="0"
-                class="rounded-t-2xl"
                 allow="
                   accelerometer;
                   autoplay;
@@ -254,11 +280,13 @@
               ></iframe>
               <div class="p-5">
                 <h1 class="mt-4 mb-4 text-2xl font-bold">
-                  Career Growth in Tech: A Roadmap
+                  NVIDIA CEO Jensen Huang's Vision for the Future
                 </h1>
                 <p class="text-base leading-[20px]">
-                  Expert advice on navigating your tech career from junior
-                  developer to senior leadership roles.
+                  ou're probably hearing a lot about AI, DeepSeek, NVIDIA and
+                  more right now. If you want the big picture (and to start from
+                  the beginning), watch this Huge Conversation with NVIDIA CEO
+                  Jensen Huang.
                 </p>
                 <div class="flex gap-2 items-center pt-3">
                   <div><img src="./assets/clock.png" alt="" /></div>
@@ -273,8 +301,10 @@
         <!-- Meet the Host -->
         <div class="w-[75%] pt-20 pb-20 mx-auto flex flex-col items-center">
           <h1 class="text-5xl font-bold">Meet the Host</h1>
-          <div class="mt-15 p-8 flex gap-5 bg-[#351165] rounded-2xl">
-            <div><img src="./assets/host.png" alt="" /></div>
+          <div
+            class="mt-10 p-8 min-h-[300px] flex justify-center items-center gap-8 bg-[#351165] rounded-2xl"
+          >
+            <div><img width="400px" src="./assets/host.png" alt="" /></div>
             <div>
               <h2 class="mb-4 text-3xl font-bold">Alex Kumar</h2>
               <p class="mb-4 text-base leading-[20px]">
@@ -285,10 +315,18 @@
                 anyone looking to grow in tech.
               </p>
               <div class="flex gap-2">
-                <div><img src="./assets/linkedin.png" alt="" /></div>
-                <div><img src="./assets/twitter.png" alt="" /></div>
-                <div><img src="./assets/instagram.png" alt="" /></div>
-                <div><img src="./assets/youtube.png" alt="" /></div>
+                <div class="round">
+                  <img src="./assets/linkedin.png" alt="" />
+                </div>
+                <div class="round">
+                  <img src="./assets/twitter.png" alt="" />
+                </div>
+                <div class="round">
+                  <img src="./assets/instagram.png" alt="" />
+                </div>
+                <div class="round">
+                  <img src="./assets/youtube.png" alt="" />
+                </div>
               </div>
             </div>
           </div>
@@ -299,7 +337,9 @@
       class="pt-20 pb-10 w-full bg-center bg-cover bg-[url(./assets/footer-bg.png)] bg-no-repeat text-[#FFFFFF]"
     >
       <div class="flex flex-col items-center">
-        <h1 class="mb-5 text-7xl font-extrabold">TechWave</h1>
+        <h1 class="mb-5 text-7xl font-extrabold">
+          Tech<span class="wave">Wave</span>
+        </h1>
         <div class="flex w-[30%] items-center justify-between">
           <div class="flex gap-2 items-center justify-center content-center">
             <div><img src="./assets/spotify.png" alt="" /></div>
