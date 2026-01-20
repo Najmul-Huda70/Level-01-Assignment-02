@@ -43,8 +43,31 @@
           display: none;
         }
         .about {
-          flex-direction: column;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
           gap: 10px;
+        }
+        .why {
+          grid-template-columns: repeat(1, 1fr);
+          grid-column: 1;
+          grid-row: 5;
+        }
+        .rspan {
+          grid-row: 1;
+          grid-column: 1;
+        }
+        .Featured {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        .container {
+          align-items: center;
+          justify-content: center;
+        }
+        .man {
+          flex-direction: column;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
         }
       }
     </style>
@@ -149,9 +172,9 @@
           <div>
             <h1 class="mb-10 text-5xl font-bold">Why Choose TechWave</h1>
           </div>
-          <div class="grid grid-cols-3 grid-rows-3 gap-7">
+          <div class="why grid grid-cols-3 grid-rows-3 gap-7">
             <div
-              class="flex flex-col justify-center px-8 py-15 row-span-2 bg-[#351165] rounded-2xl"
+              class="rspan flex flex-col justify-center px-8 py-15 row-span-2 bg-[#351165] rounded-2xl"
             >
               <div><img src="./assets/headphone.png" alt="" /></div>
               <h1 class="mt-4 mb-4 text-2xl font-bold">
@@ -163,7 +186,7 @@
                 mastered for optimal listening across all devices and platforms.
               </p>
             </div>
-            <div class="px-8 py-15 col-span-2 bg-[#351165] rounded-2xl">
+            <div class="px-8 py-15 col-span-2 rspan bg-[#351165] rounded-2xl">
               <img src="./assets/device.png" alt="" />
               <h1 class="mt-4 mb-4 text-2xl font-bold">Mobile Friendly</h1>
               <p class="text-base leading-[20px]">
@@ -178,7 +201,7 @@
                 Connect with tech enthusiasts from over 120 countries worldwide.
               </p>
             </div>
-            <div class="px-8 py-15 col-span-2 bg-[#351165] rounded-2xl">
+            <div class="px-8 py-15 col-span-2 rspan bg-[#351165] rounded-2xl">
               <div><img src="./assets/Icon (Stroke).png" alt="" /></div>
               <h1 class="mt-4 mb-4 text-2xl font-bold">Exclusive Interviews</h1>
               <p class="text-base leading-[20px]">
@@ -205,7 +228,7 @@
         <div class="w-[75%] pt-20 pb-20 mx-auto flex flex-col items-center">
           <h1 class="text-5xl font-bold">Featured Episodes</h1>
 
-          <div class="mt-10 grid grid-cols-3 grid-rows-1 gap-7">
+          <div class="mt-10 Featured grid grid-cols-3 grid-rows-1 gap-7">
             <div class="bg-[#250D44] rounded-2xl">
               <iframe
                 width="100%"
@@ -319,13 +342,15 @@
           <div></div>
         </div>
         <!-- Meet the Host -->
-        <div class="w-[75%] pt-20 pb-20 mx-auto flex flex-col items-center">
+        <div
+          class="w-[75%] pt-20 pb-20 container mx-auto flex flex-col items-center"
+        >
           <h1 class="text-5xl font-bold">Meet the Host</h1>
           <div
-            class="mt-10 p-8 min-h-[300px] flex justify-center items-center gap-8 bg-[#351165] rounded-2xl"
+            class="mt-10 p-8 min-h-[300px] man flex justify-center items-center gap-8 bg-[#351165] rounded-2xl"
           >
             <div><img width="400px" src="./assets/host.png" alt="" /></div>
-            <div>
+            <div class="flex flex-col container">
               <h2 class="mb-4 text-3xl font-bold">Alex Kumar</h2>
               <p class="mb-4 text-base leading-[20px]">
                 Tech entrepreneur, productivity expert, and lifelong learner.
