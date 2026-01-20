@@ -30,6 +30,23 @@
         border: 1px solid #fb09b4;
         border-radius: 30px;
       }
+      .menu-icon {
+        display: none;
+        cursor: pointer;
+      }
+      @media screen and (max-width: 576px) {
+        .menu-icon {
+          display: block;
+        }
+        .ul,
+        .sb {
+          display: none;
+        }
+        .about {
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
     </style>
     <title>Techwave</title>
   </head>
@@ -40,7 +57,7 @@
         <nav class="flex justify-between items-center w-[90%] p-[10px] mx-auto">
           <h1 class="text-5xl font-bold">Tech<span class="wave">Wave</span></h1>
           <ul
-            class="flex justify-center items-center gap-x-20 text-base/[120%] font-medium"
+            class="ul flex justify-center items-center gap-x-20 text-base/[120%] font-medium"
           >
             <li class="list-none"><a class="no-underline" href="">About</a></li>
             <li class="list-none">
@@ -48,8 +65,11 @@
             </li>
             <li class="list-none"><a class="no-underline" href="">Host</a></li>
           </ul>
+          <div class="menu-icon">
+            <img src="./assets/hamburger-menu.png" alt="" />
+          </div>
           <button
-            class="cursor-pointer text-base font-semibold bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-3xl px-3 py-1"
+            class="sb cursor-pointer text-base font-semibold bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-3xl px-3 py-1"
           >
             Subscribe <i class="fa-solid fa-arrow-right"></i>
           </button>
@@ -103,7 +123,7 @@
         </div>
         <hr class="w-[75%] m-10 mx-auto" />
         <div
-          class="pb-30 w-[75%] mx-auto text-center flex justify-between items-center gap-x-20"
+          class="about pb-30 w-[75%] mx-auto text-center flex justify-between items-center gap-x-20"
         >
           <div>
             <h1 class="text-5xl font-extrabold text-[#00FF88] mb-4">150K+</h1>
